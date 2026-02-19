@@ -10,12 +10,19 @@ Probe-based confocal laser endomicroscopy (pCLE) enables in-vivo assessment of m
 
 
 *<a href="https://scholar.google.com/citations?user=N8Y3mGAAAAAJ&hl=es" style="color:blue;">Ilán Carretero</a>, 
-<a href="https://www.linkedin.com/in/roshni-mahtani-vashdev-165aa7225/?locale=en_US&trk=people-guest_people_search-card" style="color:blue;">Roshni Mahtani</a>, 
-<a href="https://www.incliva.es/" style="color:blue;">Silvia Perez-Deben</a>, 
-<a href="https://www.incliva.es/" style="color:blue;">José Francisco González-Muñoz</a>, 
-<a href="https://www.incliva.es/" style="color:blue;">Carlos Monteagudo</a>, 
-<a href="https://scholar.google.com/citations?user=jk4XsG0AAAAJ&hl=es" style="color:blue;">Valery Naranjo</a>, 
-<a href="https://scholar.google.com/citations?user=CPCZPNkAAAAJ&hl=es" style="color:blue;">Rocío del Amor</a>*
+<a href="https://scholar.google.es/citations?user=4r9lgdAAAAAJ&hl=es&oi=ao" style="color:blue;">Pablo Meseguer</a>, 
+<a href="https://www.researchgate.net/profile/Irene-Zammarchi" style="color:blue;">Irene Zammarchi</a>, 
+<a href="https://scholar.google.com/citations?user=MYgrRXIAAAAJ&hl=it" style="color:blue;">Cecilia Pugliano</a>, 
+<a href="https://scholar.google.es/citations?user=llZl5hAAAAAJ&hl=es&oi=ao" style="color:blue;">Giovanni Santacroce</a>, 
+<a href="https://scholar.google.es/citations?user=9oLYv7sAAAAJ&hl=es&oi=ao" style="color:blue;">Bisi Bode Kolawole</a>, 
+<a href="https://scholar.google.es/citations?user=u0grgIkAAAAJ&hl=es&oi=ao" style="color:blue;">Ujwala Chaudhari</a>,
+<a href="https://scholar.google.es/citations?user=CPCZPNkAAAAJ&hl=es&oi=ao" style="color:blue;">Rocío del Amor</a>, 
+<a href="https://scholar.google.es/citations?user=gJxnw0QAAAAJ&hl=es&oi=ao" style="color:blue;">Enrico Grisan</a>, 
+<a href="https://scholar.google.com/citations?user=ATE1saYAAAAJ&hl=en" style="color:blue;">Marietta Iacucci</a>, 
+<a href="https://scholar.google.com/citations?user=jk4XsG0AAAAJ&hl=es" style="color:blue;">Valery Naranjo</a>*
+
+
+📜 <span style="color:red"><em>Submitted to <a href="https://2026.ieeeicip.org/" style="color:red;">ICIP'26</a></em></span> 
 
 ---
 
