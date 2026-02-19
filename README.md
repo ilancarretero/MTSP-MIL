@@ -32,6 +32,8 @@ Probe-based confocal laser endomicroscopy (pCLE) enables in-vivo assessment of m
 .
 ├── aggregator/
 │   └── MTSP_MIL.py                      # Main MTSP-MIL architecture & Ablation models
+├── example_xlsx/
+│   └── EXAMPLE_DATA_CV.xlsx             # Template illustrating the required Excel dataset format
 ├── figure/
 │   └── mtsp_framework.pdf               # Architecture diagram
 ├── preprocessing/
@@ -68,14 +70,25 @@ pip install seaborn==0.13.2 openpyxl==3.1.5 decord==0.6.0
 
 ---
 
-### 2. Standard Training & Evaluation (`main_MTSP_mil.py`)
+### 2. Data Formatting Requirements
+
+Before executing the training pipelines, your metadata must be structured correctly. We provide a reference template located at `example_xlsx/EXAMPLE_DATA_CV.xlsx`. 
+
+For the scripts to successfully map your pre-extracted embeddings to the ground truth and cross-validation partitions, ensure your `.xlsx` file includes at least the following columns:
+- `SAMPLES`: Unique identifiers that perfectly match the names of your `.npy` embedding files and `.mp4` videos.
+- `FOLD`: Integer values assigning each sample to a specific cross-validation fold.
+- **Target Label (e.g., `ACTIVITY`)**: The specific column containing the ground-truth classes for the prediction task.
+
+---
+
+### 3. Standard Training & Evaluation (`main_MTSP_mil.py`)
 
 This script executes the core Multiple Instance Learning pipeline. It loads the pre-extracted sequence embeddings, performs cross-validation based on the provided partitions, and computes quantitative metrics (e.g., AUC, Confusion Matrix) for each fold and the global aggregated results.
 
 **Basic Execution:**
 ```bash
 python main_MTSP_mil.py \
-    --excel_path ./EXCEL_PATH_WITH_PARTITIONS.xlsx \
+    --excel_path ./example_xlsx/EXAMPLE_DATA_CV.xlsx \
     --emb_dir_1 ./FIRST_DIRECTORY_CONTAINING_EMBEDDINGS \
     --emb_dir_2 ./SECOND_DIRECTORY_CONTAINING_EMBEDDINGS \
     --embedding_model dinov2_base \
@@ -94,7 +107,7 @@ python main_MTSP_mil.py \
 
 ---
 
-### 3. Training + Interpretability (`main_MTSP_mil_explanation.py`)
+### 4. Training + Interpretability (`main_MTSP_mil_explanation.py`)
 
 This script expands upon the standard pipeline. In addition to training the model and computing metrics, it generates visual explanations for the validation set. It utilizes the `decord` library to rapidly map high-attention features back to the original `.mp4` files, extracting the top frames that trigger specific visual-semantic prototypes and global attention.
 
@@ -103,7 +116,7 @@ This script expands upon the standard pipeline. In addition to training the mode
 **Basic Execution:**
 ```bash
 python main_MTSP_mil_explanation.py \
-    --excel_path ./EXCEL_WITH_CV_PARTITIONS.xlsx \
+    --excel_path ./example_xlsx/EXAMPLE_DATA_CV.xlsx \
     --emb_dir_1 ./FIRST_FOLDER_WITH_EMBEDDINGS \
     --emb_dir_2 ./SECOND_FOLDER_WITH_EMBEDDINGS \
     --embedding_model dinov2_base \
