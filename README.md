@@ -37,6 +37,8 @@ Probe-based confocal laser endomicroscopy (pCLE) enables in-vivo assessment of m
 ├── figure/
 │   └── mtsp_framework.pdf               # Architecture diagram
 ├── preprocessing/
+│   ├── example_xlsx/                    # Excel templates for data formatting in custom_stratified_k_folds.py
+│   │   └── EXAMPLE_DATA.xlsx            # Template illustrating the required dataset format
 │   ├── custom_stratified_k_folds.py     # Cross-validation splits (Group-Aware & Stratified)
 │   ├── extract_features.py              # Frame extraction and foundational embedding (DINOv2)
 │   ├── README.md                        # Preprocessing instructions
