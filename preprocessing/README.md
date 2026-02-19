@@ -52,8 +52,10 @@ This script generates cross-validation partitions that strictly adhere to two cr
 1. **Patient Independence (Group-Aware):** Forces all samples from a single patient into the same fold. This completely prevents data leakage, ensuring no patient's data overlaps between training and validation sets.
 2. **Stratification:** Maintains a balanced class distribution (e.g., "Healthy" vs. "Sick") across all folds to ensure representative training and validation phases.
 
+> **Data Formatting Template:** We provide a reference template located at `example_xlsx/EXAMPLE_DATA.xlsx`. Ensure your input dataset follows this exact tabular structure (specifically regarding patient identifiers, sample IDs, and class labels) before running the script.
+
 **Workflow Summary:**
-* **Ingestion:** Loads an Excel file containing patient identifiers, samples, and class labels.
+* **Ingestion:** Loads the input Excel file structured according to the provided template.
 * **Grouping:** Aggregates the data at the patient level.
 * **Balancing (Greedy Algorithm):** Sorts patients by their total number of samples. Iteratively assigns each patient to the fold that currently has the highest deficit of their specific classes, preserving the global class distribution.
 * **Output:** Generates a new Excel file (suffixed with `_folded.xlsx`), appending a `FOLD` column to the original data.
