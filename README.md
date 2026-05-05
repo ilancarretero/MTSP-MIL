@@ -22,7 +22,7 @@ Probe-based confocal laser endomicroscopy (pCLE) enables in-vivo assessment of m
 <a href="https://scholar.google.com/citations?user=jk4XsG0AAAAJ&hl=es" style="color:blue;">Valery Naranjo</a>*
 
 
-📜 <span style="color:red"><em>Submitted to <a href="https://2026.ieeeicip.org/" style="color:red;">ICIP'26</a></em></span> 
+📜 <span style="color:red"><em>Accepted in <a href="https://2026.ieeeicip.org/" style="color:red;">ICIP'26</a></em></span> 
 
 ---
 
